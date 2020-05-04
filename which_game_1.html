@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <script type="text/javascript" src="myScript.js"></script>
+  <!-- CSS Dependencies -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://unpkg.com/shards-ui@latest/dist/css/shards.min.css">
+</head>
+<body onload="loadImg()">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-secondary mb-4">
+    <img src="images/demo/shards-logo.svg" alt="Example Navbar 1" class="mr-2" height="30">
+    <a class="navbar-brand" href="task_page_1.html">Sentiment Analysis Data Tagger</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown-2" aria-controls="navbarNavDropdown-2"
+    aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse mr-auto" id="navbarNavDropdown-2">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <!--<a class="nav-link" href="#">Home
+        <span class="sr-only">(current)</span>
+      </a>-->
+    </li>
+  </ul>
+</div>
+</nav>
+
+<div class="container" id="rating_area">
+  <div style="border: 2px solid #e0e0e0; padding: 1.5% 0.2% 1.5% 0.2%; border-radius: 0px;"> <!-- top, right, bottom & left  -->
+  <div class="container" id="nav-container" style="height:5vh;">
+    <button id="return_button" type="button" class="btn btn-primary btn" style="margin-bottom: 7px;
+    border-radius: 5px; position: relative; float: left;" onclick="goBack()">< Task List </button>
+    <button id="return_button" type="button" class="btn btn-outline-primary btn" style="margin-bottom: 7px;
+    border-radius: 5px; position: relative; float: right;" onclick="access_wiki()">Check Fortnite Glossary?</button>
+  </div>
+
+  <div class="container" id="image_div" style="height: 38vh; position: relative">
+    <img id="image_to_rate" src="sample_tweet.png" style="height: 40%; position: absolute;
+    margin: auto; top: 0; left: 0; right: 0; bottom: 0;">
+  </div>
+</div>
+  <div style="background: #e0e0e0; padding-top: 4%; padding-bottom: 1.25%;">
+    <div class="text-center" style="height: 5vh;">
+      <h3 style="margin: auto; top: 0; bottom: 0;">
+        Which game is this tweet referring to?</h3>
+      </div>
+      <div class="container" id="options_div" style="height:24vh; position: relative;">
+        <div class="btn-group-vertical" style="position: absolute;
+        margin: auto; top: 0; left: 0; right: 0; bottom: 0; width: 45%">
+        <button id="option_1" type="button" class="btn btn-primary" style="margin-bottom: 7px;
+        border-radius: 5px;" onclick="gameSelected(this.id)">
+        Fortnite</button>
+        <button id="option_2" type="button" class="btn btn-danger" style="margin-bottom: 7px;
+        border-radius: 5px;" onclick="gameSelected(this.id)">
+        Apex</button>
+        <button id="option_3" type="button" class="btn btn-success" style="margin-bottom: 7px;
+        border-radius: 5px;" onclick="gameSelected(this.id)">
+        Other</button>
+      </div>
+    </div>
+    <div class="text-center">
+      <h5 style="margin-top: 0%; color: #007bff;">
+        Step 1 of 4
+        <h5>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Optional JavaScript -->
+    <!-- JavaScript Dependencies: jQuery, Popper.js, Bootstrap JS, Shards JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/shards-ui@latest/dist/js/shards.min.js"></script>
+  </body>
+  </html>
