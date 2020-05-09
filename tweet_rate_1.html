@@ -108,6 +108,46 @@
   </div>
 </div>
 
+<form id="data_submit_1" class="gform pure-form pure-form-stacked" method="POST" data-email="example@email.net"
+action="https://script.google.com/macros/s/AKfycbzKFTwWmVEJ6VFf55X9_3xpTuScx5GeR3CtU3HKN8Evp4JYO2o/exec">
+  <!-- change the form action to your script url -->
+  <!-- style="display: none;" -->
+  <div class="form-elements" style="display: none;">
+    <fieldset class="pure-group">
+      <label for="tweet_id =">tweet_id: </label>
+      <input id="tweet_id" name="tweet_id" value="empty" />
+    </fieldset>
+
+    <fieldset class="pure-group">
+      <label for="game_selected =">game_selected: </label>
+      <input id="game_selected" name="game_selected" value="empty" />
+    </fieldset>
+
+    <fieldset class="pure-group">
+      <label for="tweet_category =">tweet_category: </label>
+      <input id="tweet_category" name="tweet_category" value="empty" />
+    </fieldset>
+
+    <fieldset class="pure-group">
+      <label for="tweet_intent =">tweet_intent: </label>
+      <input id="tweet_intent" name="tweet_intent" value="empty" />
+    </fieldset>
+
+    <fieldset class="pure-group">
+      <label for="tweet_rate =">tweet_rate: </label>
+      <input id="tweet_rate" name="tweet_rate" value="empty" />
+    </fieldset>
+
+    <fieldset class="pure-group honeypot-field">
+      <label for="honeypot">hey fill this!</label>
+      <input id="honeypot" type="text" name="honeypot" value="" />
+    </fieldset>
+
+    <button id="send_trigger" class="button-success pure-button button-xlarge">
+      <i class="fa fa-paper-plane"></i>&nbsp;Send</button>
+  </div>
+</form>
+
   <!-- Optional JavaScript -->
   <!-- JavaScript -->
   <!-- JavaScript Dependencies: jQuery, Popper.js, Bootstrap JS, Shards JS -->
@@ -115,6 +155,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
   <script src="https://unpkg.com/shards-ui@latest/dist/js/shards.min.js"></script>
+  <script data-cfasync="false" type="text/javascript" src="form-submission-handler.js"></script>
 </body>
 </html>
 

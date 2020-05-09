@@ -1,0 +1,28 @@
+{
+  "name": "dist",
+  "version": "1.0.0",
+  "description": "empty",
+  "main": "myScript.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "not publishing",
+  "license": "ISC",
+  "dependencies": {
+    "argparse": "^1.0.10",
+    "csv-write-stream": "^2.0.0",
+    "generate-object-property": "^1.2.0",
+    "ndjson": "^1.5.0",
+    "require.js": "^1.0.0",
+    "requirejs": "^2.3.6",
+    "uniq": "^1.0.1"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "not publishing"
+  },
+  "keywords": [
+    "test"
+  ]
+}
